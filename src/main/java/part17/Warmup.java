@@ -11,5 +11,24 @@ package part17;
 // You will need to type the main method yourself. That is the point.
 
 public class Warmup {
+    public static void main(String[] args) {
+        Pet pet1 = new Pet("Max", 3);
+        Pet pet2 = new Pet("Luna", 5);
+        pet1.speak();
+        pet2.speak();
+    }
 
+}
+class Pet {
+    String name;
+    int age;
+
+    Pet(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void speak() {
+        System.out.println(name + " is " + age + " years old");
+    }
 }
