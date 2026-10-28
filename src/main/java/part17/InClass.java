@@ -9,18 +9,27 @@ package part17;
 public class InClass {
     public static void main(String[] args) {
 
-        // STEP 1 — we make three smoothies and print them, together, here.
+        // STEP 1
 
+        Smoothie s1 = new Smoothie();
+        Smoothie s2 = new Smoothie("mango");
+        Smoothie s3 = new Smoothie("strawberry", "large");
+
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
 
 
         // STEP 2 — fix the bugs. Each line below has ONE mistake.
         // Move ONE line at a time above the /* line, so Java sees it.
         // Read the red error. Fix it. Run it. Then do the next line.
-        /*
-        Smoothie s4 = new Smoothie("kiwi", "large", "extra ice");
-        Smoothie s5 = Smoothie("mango");
-        System.out.println(s1.toString);
-        */
+        // not of the construtors allow this to be the arg
+        Smoothie s4 = new Smoothie("kiwi", "7");
+        // never created a NEW object
+        Smoothie s5 = new Smoothie("mango");
+        // this line needs toString to have () because its a function
+        System.out.println(s1.toString());
+
     }
 }
 
@@ -28,4 +37,25 @@ public class InClass {
 // and a toString method.
 class Smoothie {
 
+    String fruit;
+    String size;
+
+    Smoothie() {
+        this.fruit = "banana";
+        this.size = "small";
+    }
+
+    Smoothie(String fruit) {
+        this.fruit = fruit;
+        this.size = "small";
+    }
+
+    Smoothie(String fruit, String size) {
+        this.fruit = fruit;
+        this.size = size;
+    }
+
+    public String toString() {
+        return "a " + size + " " + fruit + " smoothie";
+    }
 }
