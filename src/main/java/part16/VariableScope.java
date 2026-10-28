@@ -18,6 +18,7 @@ package part16;
 
 public class VariableScope {
     public static void main(String[] args) {
+        // this line Creates a DiceRoller object and call its constructor
         DiceRoller diceRoller = new DiceRoller();
     }
 }

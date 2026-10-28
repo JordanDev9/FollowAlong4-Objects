@@ -18,12 +18,19 @@ package part16;
 
 public class Constructors {
     public static void main(String[] args) {
+        // this line creates a object human and uses the constructor and the parameters
         Human human = new Human("Rick", 65, 70);
+        // this line prints the name of the object human
         System.out.println(human.name);
+        // this line creates a object named human2 and uses the constructor and parameters
         Human human2 = new Human("Morty", 16, 50);
+        // this line prints the name of the object human
         System.out.println(human.name);
+        // this line prints the name of the object human2
         System.out.println(human2.name);
+        // this line excutes the method human.eat()
         human.eat();
+        // this line excutes the mehtod human2.drink()
         human2.drink();
     }
 }
