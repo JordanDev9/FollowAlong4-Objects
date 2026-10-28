@@ -14,5 +14,13 @@ package part15;
 // You will need to type the main method yourself.
 
 public class Warmup {
+    public static void main(String[] args) {
+        String item = "Pizza";
+        int qty = 2;
+        double price = 12.5;
+
+        System.out.printf("%-10s x%d  $%.2f\n",
+                item, qty, price * qty);
+    }
 
 }
