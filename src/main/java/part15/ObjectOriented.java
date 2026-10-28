@@ -18,14 +18,31 @@ package part15;
 
 public class ObjectOriented {
     public static void main(String[] args) {
+        // Create a new Car object and store it in myCar
         Car myCar = new Car();
+
+// Print the make of myCar
         System.out.println(myCar.make);
+
+// Print the model of myCar
         System.out.println(myCar.model);
+
+// Call the drive method on myCar
         myCar.drive();
+
+// Call the brake method on myCar
         myCar.brake();
+
+// Create a second Car object and store it in myCar2
         Car myCar2 = new Car();
+
+// Print a blank line for spacing
         System.out.println();
+
+// Print the make of myCar2
         System.out.println(myCar2.make);
+
+// Print the model of myCar2
         System.out.println(myCar2.model);
     }
 }

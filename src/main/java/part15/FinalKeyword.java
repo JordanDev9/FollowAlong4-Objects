@@ -17,8 +17,9 @@ package part15;
 
 public class FinalKeyword {
     public static void main(String[] args) {
+        // this line sets the variable PI to 3.14159 and becauses it final it cannot be changed
         final double PI = 3.14159;
-
+        // this line prints the variable PI
         System.out.println(PI);
 
     }
