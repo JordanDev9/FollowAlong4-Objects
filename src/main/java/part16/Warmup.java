@@ -13,5 +13,31 @@ package part16;
 // You will need to type the main method yourself.
 
 public class Warmup {
+    public static void main(String[] args) {
+        Phone phone = new Phone();
+
+        phone.charge();
+        phone.charge();
+
+        System.out.println(phone.brand + " battery: " + phone.battery);
+    }
+    static class Phone {
+        String brand = "Apple";
+        int battery = 80;
+
+        final int MAX_BATTERY = 100;
+
+        void charge() {
+            battery = battery + 10;
+
+            if (battery > MAX_BATTERY) {
+                battery = MAX_BATTERY;
+            }
+
+            System.out.println("Charging... " + battery + "%");
+        }
+    }
+
+
 
 }
