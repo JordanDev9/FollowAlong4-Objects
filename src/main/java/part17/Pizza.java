@@ -44,5 +44,12 @@ public class Pizza {
 // this sets the bread field to the bread that was passed in
         this.bread = bread;
     }
+    Pizza(){
+        this.bread = bread;
+        this.sauce = sauce;
+        this.cheese = cheese;
+        this.topping = topping;
+
+    }
 
 }

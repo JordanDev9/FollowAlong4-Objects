@@ -16,4 +16,16 @@ public class Car {
         // this line returns the variable my String which is created in the line above
         return myString;
     }
+    Car(String make,String model, String color,int year){
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.year = year;
+    }
+    Car(){
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.year = year;
+    }
 }
