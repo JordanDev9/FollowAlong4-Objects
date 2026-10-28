@@ -16,12 +16,14 @@ package part17;
 
 public class ToStringMethod {
     public static void main(String[] args) {
+        // this line creates a object called car and uses the construtor Car ()
         Car car = new Car();
-
+        // the next lines below print the make model color and year of the car individualy by doing .____
         System.out.println(car.make);
         System.out.println(car.model);
         System.out.println(car.color);
         System.out.println(car.year);
+        // these two lines print the the object car as a whole
         System.out.println(car);
         System.out.println(car.toString());
 

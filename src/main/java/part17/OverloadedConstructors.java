@@ -16,12 +16,26 @@ package part17;
 
 public class OverloadedConstructors {
     public static void main(String[] args) {
+
+        // this line creates a pizza object with all 4 ingredients
         Pizza pizza = new Pizza("thick crust", "tomato", "mozzarella", "pepperoni");
+
+// this prints a message before showing the ingredients
         System.out.println("Here are the ingredients of your pizza: ");
+
+// this prints the bread type of the pizza
         System.out.println(pizza.bread);
+
+// this prints the sauce type of the pizza
         System.out.println(pizza.sauce);
+
+// this prints the cheese type of the pizza
         System.out.println(pizza.cheese);
+
+// this prints the topping of the pizza
         System.out.println(pizza.topping);
+
+// this creates a second pizza object using the 3-parameter constructor
         Pizza pizza2 = new Pizza("thick crust", "tomato", "mozzarella");
     }
 
