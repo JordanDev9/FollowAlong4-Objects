@@ -61,4 +61,11 @@ public class Receiver {
     public String toString() {
         return "#" + number + " " + name + ": " + catches + " catches, " + yards + " yards";
     }
+    public double yardsPerCatch() {
+        if (catches == 0) {
+            return 0.0;
+        }
+
+        return (double) yards / catches;
+    }
 }
