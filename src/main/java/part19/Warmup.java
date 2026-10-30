@@ -11,5 +11,12 @@ package part19;
 // You will need to type the main method yourself. That is the point.
 
 public class Warmup {
+    public static void main(String[] args) {
+        String[] fridge = {"milk", "eggs", "cheese"};
+
+        for (String item : fridge) {
+            System.out.println("In the fridge: " + item);
+        }
+    }
 
 }
