@@ -6,4 +6,7 @@ public class Garage {
         // this line prints the car.name from the car construsotr and whats inside the quotes
         System.out.println("The " + car.name + " is parked in the garage");
     }
+    void leave(Car car) {
+        System.out.println("The " + car.name + " left the garage");
+    }
 }
