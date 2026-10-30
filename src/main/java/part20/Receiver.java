@@ -13,3 +13,39 @@ package part20;
 // Under these comments, type the class: public class Receiver { ... }
 //
 // When it works, put a // comment ABOVE every line of code, in YOUR OWN WORDS (Section B).
+public class Receiver{
+    private String name;
+    private int number;
+    private int catches;
+    private int yards;
+
+    public Receiver(String name, int number) {
+        this.name = name;
+        this.number = number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public int getCatches() {
+        return catches;
+    }
+
+    public int getYards() {
+        return yards;
+    }
+
+    public void catchBall(int gain) {
+        catches++;
+        yards += gain;
+    }
+
+    public String toString() {
+        return "#" + number + " " + name + ": " + catches + " catches, " + yards + " yards";
+    }
+}
