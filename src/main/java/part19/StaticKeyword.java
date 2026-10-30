@@ -16,17 +16,29 @@ package part19;
 
 public class StaticKeyword {
     public static void main(String[] args) {
+        // this line prints the current number of friends
         System.out.println(Friend.numberOfFriends);
+// this line creates a Friend object named SpongeBob
         Friend friend1 = new Friend("SpongeBob");
+// this line prints the updated number of friends
         System.out.println(Friend.numberOfFriends);
+// this line creates a Friend object named Patrick
         Friend friend2 = new Friend("Patrick");
+// this line prints the updated number of friends
         System.out.println(Friend.numberOfFriends);
+// this line creates a Friend object named Squidward
         Friend friend3 = new Friend("Squidward");
+// this line prints the updated number of friends
         System.out.println(Friend.numberOfFriends);
+// this line prints the shared friend count using friend1
         System.out.println(friend1.numberOfFriends);
+// this line calls the displayFriends method
         Friend.displayFriends();
+// this line creates a Friend object named Sandy
         Friend friend4 = new Friend("Sandy");
+// this line calls the displayFriends method again
         Friend.displayFriends();
+// this line rounds 3.14 to the nearest whole number and prints it
         System.out.println(Math.round(3.14));
     }
 
