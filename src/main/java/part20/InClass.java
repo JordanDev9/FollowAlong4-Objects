@@ -11,14 +11,19 @@ public class InClass {
 
         // STEP 1 — design two classes together. NO code, only comments.
         // For each class, write its fields and its methods.
-        //
         // Hoop
-        //   fields:
-        //   methods:
-        //
-        // Shooter
-        //   fields:
-        //   methods:
+//   fields:   name (String), points (int)
+//   methods:  Hoop(String name)                     a constructor
+//             score(int shotPoints)                 adds to points
+//             toString()                            "gym hoop: 12 points"
+//
+// Shooter
+//   fields:   name (String), range (int), attempts (int), makes (int)
+//   methods:  Shooter(String name, int range)       a constructor
+//             shootAt(Hoop target, int distance)    true if it went in. It calls
+//                                                   target.score(...) when it does
+//             accuracy()                            makes out of attempts, as a percent
+//             toString()
 
 
 

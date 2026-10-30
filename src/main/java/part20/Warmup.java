@@ -13,5 +13,10 @@ package part20;
 // You will need to type the main method yourself. That is the point.
 
 public class Warmup {
-
+    public static void main(String[] args) {
+        long rounded = Math.round(3.7);
+        double root = Math.sqrt(81);
+        int bigger = Math.max(4, 9);
+        System.out.println(rounded + " " + root + " " + bigger);
+    }
 }
